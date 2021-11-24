@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Lato", Verdana, sans-serif;
+    background-image: url(./img/chess.png);
+}
+
+.scroll {
+    overflow: hidden;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.header {
+    background-color: #f06c64;
+    color: #F0D8D9;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 940px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 7rem
+}
+
+.header__navbar {
+    font-size: 1.2rem;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+}
+
+.burger {
+    display: none;
+    position: relative;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.burger__line {
+    display: inline-block;
+    position: absolute;
+    height: 2.4px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 5px;
+    top: calc(50% - 1.2px);
+}
+
+.burger-menu {
+        display: flex;
+    position: relative;
+    width: 45%;
+    max-width: 270px;
+    height: 100%;
+    background: #2D303A;
+}
+
+.burger-rotate {
+    transform: rotate( 90deg);
+    transition: transform 5s;
+    top: 22px;
+    left: 23px;
+}
+
+.fake-span {
+    width: 25px;
+    height: 20px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.navbar a {
+    border-radius: 5px;
+    border: none;
+    color: #F48C8F;
+    background-color: #F0D8D9;
+    cursor: pointer;
+    height: 100%;
+    padding: 5px 5px;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #F0D8D9;
+    background-color: black;
+}
+
+.header__date {
+    display: block;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.arrow {
+    position: absolute;
+    width: 16px;
+    height: 27px;
+    top: calc(50% - 13.5px);
+    cursor: pointer;
+}
+
+.prev {
+    background: url(./img/prev_arrow.svg) no-repeat;
+    left: 20px;
+}
+
+.next {
+    background: url(./img/next_arrow.svg) no-repeat;
+    right: 20px;
+}
+
+.journal {
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.journal__inner {
+    padding-top: 20px;
+}
+
+.journal__week {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.journal__days {
+    width: 49%;
+}
+
+.journal__day, .summary-page__table {
+    margin-bottom: 14px;
+    background-color: #ec9e03;
+}
+
+.journal__table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddb101;
+    text-align: center;
+}
+
+.journal__table thead, .summary-page__table thead {
+    background-color: #b26529;
+}
+
+.journal__table tbody tr {
+    height: calc(100%/7);
+    overflow: hidden;
+}
+
+.journal__date {
+    border: none;
+}
+
+.journal__date-day {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.journal__table tbody .ht {
+    text-align: justify;
+}
+
+.journal__table th, .journal__table td, .summary-page__table th, .summary-page__table td {
+    border: 1px solid #e1e1e1;
+}
+
+.lesson {
+    width: 25%;
+}
+
+.ht, .thead-ht {
+    width: 55%;
+    height: 50px;
+}
+
+.ht div {
+    display: flex;
+    overflow: hidden;
+    height: 50px;
+    padding: 5px;
+    align-items: center;
+}
+
+.mark {
+    width: 20%;
+}
+
+.mark, .qmark, .ymark {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.summary-page {
+    display: none;
+    flex-direction: column;
+    color: #fff;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.summary-page__table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 1px solid #ddb101;
+    font-size: 1.2rem;
+}
+
+.summary-page__table thead tr {
+    height: 50px;
+}
+
+.marks, .average-marks {
+    height: 30px;
+}
+
+.marks__lesson {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.qdates {
+    width: calc(80%/5);
+}
+
+.modal {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all 0.8s ease 0s;
+}
+
+.modal.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__body {
+    background-color: #f06c64;
+    color: #F0D8D9;
+    margin: auto;
+    width: 100%;
+    max-width: 360px;
+    height: 400px;
+    font-size: 1.5rem;
+    border-radius: 5%;
+}
+
+.modal__form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.modal__day, .modal__number, .modal__lesson {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__day input, .modal__number select, .modal__lesson select, .modal__textarea, .modal__container select {
+    display: block;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.modal__footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.modal__textarea {
+    width: 80%;
+    height: 80px;
+    margin-left: auto;
+    resize: none;
+}
+
+.modal__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 10px;
+}
+
+.modal__buttons {
+    padding-top: 20px;
+}
+
+.modal__buttons button {
+    border-radius: 5px;
+    border: none;
+    color: #F48C8F;
+    background-color: #F0D8D9;
+    cursor: pointer;
+    height: 100%;
+    padding: 5px 5px;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.modal__buttons button:hover {
+    color: #F0D8D9;
+    background-color: black;
+}
+
+@media screen and (max-width: 767px) {
+
+    .wrapper {
+        padding: 0 5px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .header__navbar {
+        justify-content: space-evenly;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        height: 2.4px;
+        width: 100%;
+        background: #ffffff;
+        border-radius: 5px;
+        top: 0;
+        left: 0;
+    }
+
+    .burger::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        height: 2.4px;
+        width: 100%;
+        background: #ffffff;
+        border-radius: 5px;
+        left: 0;
+        bottom: 0;
+    }
+    
+    .ht div {
+        padding: 0px;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 497px) {
+
+    .column-right {
+        display: none;
+    }
+    
+    .column-left {
+        width: 100%;
+    }
+
+    .journal__inner {
+        overflow-x: hidden;
+    }
+
+    .journal__day:not(:nth-child(1)) {
+        display: none;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .summary-page__table {
+        font-size: 1rem;
+    }
+}
