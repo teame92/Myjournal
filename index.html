@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&amp;display=swap" rel="stylesheet">
+    <title>MyJournal</title>
+</head>
+
+<body class='body'>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__inner">
+                <nav class="header__navbar">
+                    <span class="burger">
+                        <span class="burger__line"></span>
+                    </span>
+                    <ul class="navbar">
+                        <li><a class="this-week">Текущая неделя</a></li>
+                        <li><a class="final-marks" href="#marks">Итоговые отметки</a></li>
+                        <li><a class="navbar__btn">Добавить предмет</a></li>
+                    </ul>
+                    <input type="date" class="header__date" id="date">
+                </nav>
+                <div class="arrow prev"></div>
+                <div class="arrow next"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="journal">
+            <div class="wrapper">
+                <div class="journal__inner">
+                    <div class="journal__week">
+                        <div class="journal__days column-left">
+                            <div class="journal__day">
+                                <table class="journal__table">
+                                    <thead>
+                                        <tr>
+                                            <th class="journal__date journal__date-day" colspan="2"></th>
+                                            <th class="journal__date" id='dates' colspan="2">01.02.2021</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="thead-lesson">Предмет</th>
+                                            <th class="thead-ht">Домашнее задание</th>
+                                            <th class="thead-mark">Отметка</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbody">
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="journal__day">
+                                <table class="journal__table">
+                                    <thead>
+                                        <tr>
+                                            <th class="journal__date journal__date-day" colspan="2"></th>
+                                            <th class="journal__date" id='dates' colspan="2">02.02.2021</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="thead-lesson">Предмет</th>
+                                            <th class="thead-ht">Домашнее задание</th>
+                                            <th class="thead-mark">Отметка</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbody">
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="journal__day">
+                                <table class="journal__table">
+                                    <thead>
+                                        <tr>
+                                            <th class="journal__date journal__date-day" colspan="2"></th>
+                                            <th class="journal__date" id='dates' colspan="2">03.02.2021</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="thead-lesson">Предмет</th>
+                                            <th class="thead-ht">Домашнее задание</th>
+                                            <th class="thead-mark">Отметка</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbody">
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="journal__days column-right">
+                            <div class="journal__day">
+                                <table class="journal__table">
+                                    <thead>
+                                        <tr>
+                                            <th class="journal__date journal__date-day" colspan="2"></th>
+                                            <th class="journal__date" id='dates' colspan="2">04.02.2021</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="thead-lesson">Предмет</th>
+                                            <th class="thead-ht">Домашнее задание</th>
+                                            <th class="thead-mark">Отметка</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbody">
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="journal__day">
+                                <table class="journal__table">
+                                    <thead>
+                                        <tr>
+                                            <th class="journal__date journal__date-day" colspan="2"></th>
+                                            <th class="journal__date" id='dates' colspan="2">05.02.2021</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="thead-lesson">Предмет</th>
+                                            <th class="thead-ht">Домашнее задание</th>
+                                            <th class="thead-mark">Отметка</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbody">
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="journal__day">
+                                <table class="journal__table">
+                                    <thead>
+                                        <tr>
+                                            <th class="journal__date journal__date-day" colspan="2"></th>
+                                            <th class="journal__date" id='dates' colspan="2">06.02.2021</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="thead-lesson">Предмет</th>
+                                            <th class="thead-ht">Домашнее задание</th>
+                                            <th class="thead-mark">Отметка</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbody">
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lesson"></td>
+                                            <td class="ht">
+                                                <div></div>
+                                            </td>
+                                            <td class="mark"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary-page">
+                        <h3>Четвертные и годовые отметки</h3>
+                        <table class="summary-page__table">
+                            <thead>
+                                <tr>
+                                    <th>Предметы</th>
+                                    <th class="qdates">1 четверть</th>
+                                    <th class="qdates">2 четверть</th>
+                                    <th class="qdates">3 четверть</th>
+                                    <th class="qdates">4 четверть</th>
+                                    <th class="qdates">Годовая</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="marks">
+                                    <td class="marks__lesson">Англ. яз.</td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="ymark"></td>
+                                </tr>
+                                <tr class="marks">
+                                    <td class="marks__lesson">Бел. лит.</td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="ymark"></td>
+                                </tr>
+                                <tr class="marks">
+                                    <td class="marks__lesson">Бел. яз.</td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="ymark"></td>
+                                </tr>
+                                <tr class="marks">
+                                    <td class="marks__lesson">Биология</td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="ymark"></td>
+                                </tr>
+                                <tr class="marks">
+                                    <td class="marks__lesson">Всемир. ист.</td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="ymark"></td>
+                                </tr>
+                                <tr class="marks">
+                                    <td class="marks__lesson">География</td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="ymark"></td>
+                                </tr>
+                                <tr class="marks">
+                                    <td class="marks__lesson">ДП/МП</td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="ymark"></td>
+                                </tr>
+                                <tr class="marks">
+                                    <td class="marks__lesson">Информ.</td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="ymark"></td>
+                                </tr>
+                                <tr class="marks">
+                                    <td class="marks__lesson">Ист. Бел.</td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="ymark"></td>
+                                </tr>
+                                <tr class="marks">
+                                    <td class="marks__lesson">Матем.</td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="ymark"></td>
+                                </tr>
+                                <tr class="marks">
+                                    <td class="marks__lesson">Обществов.</td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="ymark"></td>
+                                </tr>
+                                <tr class="marks">
+                                    <td class="marks__lesson">Рус. лит.</td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="ymark"></td>
+                                </tr>
+                                <tr class="marks">
+                                    <td class="marks__lesson">Рус. яз.</td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="ymark"></td>
+                                </tr>
+                                <tr class="marks">
+                                    <td class="marks__lesson">Физика</td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="ymark"></td>
+                                </tr>
+                                <tr class="marks">
+                                    <td class="marks__lesson">Физ. к. и зд.</td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="ymark"></td>
+                                </tr>
+                                <tr class="marks">
+                                    <td class="marks__lesson">Химия</td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="qmark"></td>
+                                    <td class="ymark"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal">
+                        <div class="modal__body">
+                            <form class="modal__form" action="">
+                                <div class="modal__header">
+                                    <div class="modal__day" disabled>
+                                        <label>Выберите день</label>
+                                        <input type="date" class="modal__calendar">
+                                    </div>
+                                    <div class="modal__number">
+                                        <label>Выберите урок</label>
+                                        <select disabled class="modal__number-subject disabled">
+                                            <option value=""></option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                        </select>
+                                    </div>
+                                    <div class="modal__lesson">
+                                        <label for="">Выберите предмет</label>
+                                        <select class="name disabled">
+                                            <option value=""></option>
+                                            <option value="4">Англ. яз.</option>
+                                            <option value="5">Бел. лит.</option>
+                                            <option value="6">Бел. яз.</option>
+                                            <option value="7">Биология</option>
+                                            <option value="8">Всемир. ист.</option>
+                                            <option value="9">География</option>
+                                            <option value="10">ДП/МП</option>
+                                            <option value="11">Информ.</option>
+                                            <option value="12">Ист. Бел.</option>
+                                            <option value="13">Матем.</option>
+                                            <option value="14">Обществов.</option>
+                                            <option value="15">Рус. лит.</option>
+                                            <option value="16">Рус. яз.</option>
+                                            <option value="17">Физика</option>
+                                            <option value="18">Физ. к. и зд.</option>
+                                            <option value="19">Химия</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="modal__footer">
+                                    <textarea class="modal__textarea disabled" disabled maxlength="180"></textarea>
+                                    <div class="modal__container">
+                                        <label>Оценка</label>
+                                        <select class="modal__mark disabled">
+                                            <option value="11"></option>
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                        <div class="modal__buttons">
+                                            <button type="submit" class="submit">Сохранить</button>
+                                            <button class="close">Отмена</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
