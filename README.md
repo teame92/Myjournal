@@ -1,1 +1,1 @@
-https://teame92.github.io/myjournal
+https://teame92.github.io/Myjournal/
